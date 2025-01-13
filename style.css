@@ -38,7 +38,8 @@ footer {
     align-items: center;
 }
 
-header div {
+header div,
+#displaynone {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +76,10 @@ nav a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
+}
+.logo a, .logo a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .index,
@@ -138,7 +143,7 @@ h3 {
     font-family: "Playfair Display", serif;
     font-size: 28px;
     font-style: italic;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     margin-top: 5px;
     color: white;
 }
@@ -318,7 +323,221 @@ h4 {
 .rood {
     color: #9F1616;
 }
+
 .projectsheader {
     text-align: center;
     color: black;
+}
+
+.hamburger,
+.hamburger-menu,
+.hamburger-nav {
+    display: none;
+}
+
+
+
+
+.contact {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+.contact h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.contact p {
+    font-size: 19px;
+    margin-bottom: 32px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.contact-form .submit-button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #9F1616;
+    opacity: 0.75;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+
+    .nav,
+    #displaynone {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: black;
+        opacity: 0.75;
+        width: auto;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .hamburger-nav.show {
+        display: flex;
+    }
+
+    header div {
+        height: auto;
+        width: auto;
+    }
+
+    .hamburger-nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger {
+        height: 50px;
+        width: 50px;
+        right: 20px;
+        cursor: pointer;
+        margin-right: 30px;
+        display: block;
+    }
+
+
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .over {
+        margin-top: 100px;
+        margin-bottom: 330px;
+    }
+
+    .over .boven {
+        display: inline;
+        height: 550px;
+    }
+
+
+
+    .over .boven .tekst {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .over .onder {
+        flex-direction: column;
+    }
+
+    .over .onder .links,
+    .over .onder .rechts {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .onder .links .tool-frame {
+        width: 30%;
+        height: 130px;
+    }
+
+    .frame-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .projects {
+        display: inline;
+    }
+
+    .project-frame {
+        width: 90%;
+        height: 250px;
+    }
+    .contact {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .contact h1 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .contact-form {
+        max-width: 90%;
+        margin: 0 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .contact-form .submit-button {
+        width: auto;
+        font-size: 14px;
+        padding: 12px;
+    }
+
 }

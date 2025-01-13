@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- fonts toevoegen -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -31,53 +30,50 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="over.html">Over mij</a>
-                <a href="projecten.html"><span class="rood">Projecten</span></a>
-                <a href="contact.html">Contact</a>
+                <a href="projecten.html">Projecten</a>
+                <a href="contact.html"><span class="rood">Contact</span></a>
             </nav>
         </div>
         <div id="displaynone"></div>
         <div class="hamburger-menu">
             <img class="hamburger" src="images/menu.png" alt="hamburger" onclick="myFunction()">
         </div>
-
-
     </header>
+
     <!-- hamburgermenu -->
     <div id="myLinks" class="hamburger-nav">
         <a href="index.html">Home</a>
         <a href="over.html">Over mij</a>
-        <a href="projecten.html"><span class="rood">Projecten</span></a>
-        <a href="contact.html">Contact</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="contact.html"><span class="rood">Contact</span></a>
     </div>
-    <!-- start pagina -->
-    <main class="projecten">
-        <h3 class="projectsheader">Projecten</h3>
-        <div class="projects">
-            <div class="project-boven">
-                <div class="project-frame">
-                    <img class="project-img" src="images/pinkgoose.png" alt="pink goose site">
-                    <img class="github-logo" src="images/github.png" alt="github-logo">
-                </div>
-                <div class="project-frame">
-                    <img class="project-img" src="images/waalsprong.png" alt="waalsprong site">
-                    <img class="github-logo" src="images/github.png" alt="github-logo">
-                </div>
-            </div>
-            <div class="project-onder">
-                <div class="project-frame">
-                    <img class="project-img" src="images/mastermind.png" alt="mastermind script">
-                    <img class="github-logo" src="images/github.png" alt="github-logo">
-                </div>
-            </div>
-        </div>
+
+    <!-- start contact pagina -->
+    <main class="contact">
+        <h1>Contact</h1>
+        <p>Heb je een vraag of wil je samenwerken? Vul het formulier hieronder in of neem contact op via social media.</p>
+
+        <form action="https://formsubmit.co/thijmen.uittenbroek@gmail.com" method="POST" class="contact-form">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" placeholder="Je naam" required>
+
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="Je e-mailadres" required>
+
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" placeholder="Je bericht" rows="5" required></textarea>
+
+            <button type="submit" class="submit-button">Verzenden</button>
+        </form>
     </main>
-    <!-- einde pagina -->
+    <!-- einde contact pagina -->
+
     <!-- footer toevoegen -->
     <footer>
         <div class="socials">
-            <img src="images\instagram.png" alt="">
-            <img src="images\github.png" alt="">
-            <img src="images\linkedin.png" alt="">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/github.png" alt="GitHub"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
         </div>
     </footer>
 </body>
