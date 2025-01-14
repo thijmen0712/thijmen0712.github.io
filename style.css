@@ -304,6 +304,7 @@ h4 {
     height: 350px;
     border-radius: 20px;
     margin: 20px;
+    position: relative; /* Add this line */
 }
 
 .project-img {
@@ -318,6 +319,10 @@ h4 {
     background-color: black;
     border-radius: 40px;
     padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .rood {
@@ -334,8 +339,6 @@ h4 {
 .hamburger-nav {
     display: none;
 }
-
-
 
 
 .contact {
