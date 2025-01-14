@@ -398,7 +398,57 @@ h4 {
 }
 
 
+/* effecten */
+/* Toevoegen van leuke effecten */
 
+nav a:hover {
+    color: #9F1616;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+
+.contact-form .submit-button:hover {
+    background-color: #6F1010;
+    opacity: 1;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-form .submit-button:focus {
+    outline: 2px solid #9F1616;
+}
+
+.socials img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.project-frame:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.over .boven .foto:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+* {
+    transition: all 0.3s ease;
+}
+
+
+/* responsive */
 
 @media only screen and (max-width: 900px) {
     nav {
