@@ -48,7 +48,19 @@ header div,
 }
 
 
-
+.leesmeer {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9F1616;
+}
+.leesmeer:hover {
+    background-color: #6F1010;
+    transform: translateY(-5px);
+}
 nav {
     display: flex;
     justify-content: center;
